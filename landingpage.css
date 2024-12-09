@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .menu a:hover {
+    background-color: #555;
+    color: #ffdd57;
+    border-radius: 4px;
+  }
+  
+  /* Section Styling */
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #home { 
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+
+   }
+   #img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   }
+  #about { background-color: #ddd; }
+  #services { background-color: #bbb; }
+  #contact { background-color: #999; }
+  
+  /* Sticky Navbar on Scroll */
+  .navbar.scrolled {
+    background-color: #222;
+  }
+  
